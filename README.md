@@ -8,11 +8,11 @@
 * [How To Use The App](#How-To-Use-The-App)
 * [Contact](Contact)
 ## Introduction
-This application presents a work day planning schedule.
+This application presents a work day planning schedule. It renders a platform to write your hourly schedule from 9AM to 5PM. A user can write his/her hourly schedule and save it so that it will be saved and remain on the text box. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
 ## Objective
 
-The objective of this application is to create a random password that meets certain criteria so that the newly created password provides greater security.
+The objective of this application to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code.
 
 ## Snap shot of the UI
 
@@ -20,15 +20,12 @@ The objective of this application is to create a random password that meets cert
 
 ## How To Use The App
 
-1. Click **Generate Password** button
-2. You will be prompted with a question asking *how many charaters you like your password to have*. You will be notified to enter a number that is between 8 and 128.
-3. You will then be prompted with a yes or no question asking *whether you like uppercase letters be included in your password*
-4. You will then be prompted with a yes or no question asking *whether you like lowercase letters be included in your password*
-5. You will then be prompted with a yes or no question asking *whether you like special characters be included in your password*
-6. You will then be prompted with a yes or no question asking *whether you like numbers be included in your password*
-7. After taking all the inputs from prompts and confirms - a new password will be generated and displayed in textbox area.
+When starting using the app, a user is displayed with today's day on top of the page and a text area to write his/her schedules on on each hour from 9AM to 5PM as well as a button to save ones the schedules are written.
 
-However, if the criteria are not met, you will be asked to enter valid responses in each step. For the password to be successfully generated, your password should have a length between 8 and 128 characters and you have to select at least one character type to be included in the password. Otherwise, you will be alerted and prompted with the approprate information and told to enter a valid and acceptable input.
+Using this app simply requires writing ones hourly schedule and clicking the save button. If a user tries to save an empty textarea, the user will be prompted to write on the text area before saving it. The written schedules will remain on the text ara after saving it. A user has the option to rewrite his/her schedule if he/she wishes anytime.
+
+The text area changes color based whether the time on the schedules is past, present or future. Grey text area indicates that time is behind us. A reddish text area means, the current time is on that scheduler time block. A greenish color indicates that time block lies in the future.
+
 
 ## Contact
 
