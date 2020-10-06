@@ -1,14 +1,12 @@
 $(document).ready(function(){
 
-
-    let timeNow = moment();    
-    let hours = ["9:00AM", "10:00AM", "11:00AM", "12:00PM", "1:00PM", "2:00PM","3:00PM", "4:00PM", "5:00PM"]
+    // global variables
+    let todayDate = moment();   
     // format the time in military time to create a mathematical ease
-    let currentTime = timeNow.format("H");
+    let currentTime = todayDate.format("H");
 
     // placing today's date as a text on an element containing a "currentDay" id
-    $('#currentDay').text(timeNow.format("dddd, MMMM Do"));
-    
+    $('#currentDay').text(todayDate.format("dddd, MMMM Do"));    
     
     // this function compares currentTime with the data-number attribute and adds a class
     // that changes the color of the textarea based on past, present and future times
@@ -35,7 +33,7 @@ $(document).ready(function(){
     // this function saved text to local storage using time as a key
     function saveToLocalStorage(event){    
         event.preventDefault();
-        let text = $(this).parent("div").children("textarea").val();
+        let text = $(this).parent("div").children(".form-control").val();
         let time = $(this).parent("div").children(".time-block").text();
         
         if(text === ""){
@@ -46,37 +44,21 @@ $(document).ready(function(){
             localStorage.setItem(time, text);               
         }            
     }
-    // looping through textarea to place the local storage items in the textarea
-    $("textarea").each(function(){    
-        for(let i = 0; i < hours.length; i++){
-            // let id = $(this).attr("id");
-            let key = hours[i];
-            // console.log(key)
-            // let id = `#${key}`;
-            // let text = localStorage.getItem(key);
-            if(localStorage.getItem(key)){
-                // let id = `#${key}`;                
-                $("#"+key).text(localStorage.getItem(key))
+
+    //this function loops through textarea  and whenever id matches with the local storage key - it places the local storage value on the matching textarea    
+    function renderSchedule(){
+        $(".form-control").each(function(){
+            let id = $(this).attr("id");
+            let text = localStorage.getItem(id);
+            if(text){            
+                $(this).text(text);
             }
-            // console.log(id)
-            // console.log(key)
-            // console.log(text)
-            // if(id === key ){
-            //     $(this).text(text)
-            // }
-        }        
-    });
-    
-    
-    // let storedPlan = localStorage.getItem("time");
-    // $("#9AM").text(storedPlan)
-    // console.log(storedPlan);
-
+        });  
+    }     
+    // when the saveBtn is clicked call the function - saveToLocalStorage
     $(".saveBtn").on("click", saveToLocalStorage)
-    coloredTimeBlock();
-    
-    // $(".saveBtn").on("click", function(){
-    //     storedArr = JSON.parse(localStorage.getItem("mySchedule"));
-
-    // })     
+    // call the coloredTimeBlock function declared above
+    coloredTimeBlock();  
+    renderSchedule(); 
+       
 });    
