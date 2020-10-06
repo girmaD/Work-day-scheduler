@@ -16,7 +16,7 @@ The objective of this application is to create a random password that meets cert
 
 ## Snap shot of the UI
 
-![Alt text](./Assets/img.png)
+![Alt text](./Assets/scheduler.png)
 
 ## How To Use The App
 

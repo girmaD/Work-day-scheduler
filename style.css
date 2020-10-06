@@ -18,9 +18,11 @@ body {
   .jumbotron {
     text-align: center;
     background-color: transparent;
-    color: black;
+    color: white;
     border-radius: 0;
     border-bottom: 10px solid black;
+    background-image: url(https://i1.wp.com/www.scanphilosophy.com/wp-content/uploads/2015/07/img_44311.jpg);
+    background-size: cover;
   }
   
   .description {
