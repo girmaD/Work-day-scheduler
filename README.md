@@ -22,7 +22,7 @@ The objective of this application to create a simple calendar application that a
 
 When starting using the app, a user is displayed with today's day on top of the page and a text area to write his/her schedules on on each hour from 9AM to 5PM as well as a button to save ones the schedules are written.
 
-Using this app simply requires writing ones hourly schedule and clicking the save button. If a user tries to save an empty textarea, the user will be prompted to write on the text area before saving it. The written schedules will remain on the text area after saving it. A user has the option to rewrite his/her schedule if he/she wishes anytime.
+Using this app simply requires writing ones hourly schedule and clicking the save button. If a user tries to save an empty textarea, the user will be prompted to write on the text area before saving it. The written schedules will remain on the text area after saving it. A user has the option to rewrite his/her schedule anytime if he/she wishes.
 
 The text area changes color based whether the time on the schedules is past, present or future. Grey text area indicates that time is behind us. A reddish text area means, the current time is on that scheduler time block. A greenish color indicates that time block lies in the future.
 
