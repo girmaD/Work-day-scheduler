@@ -8,7 +8,7 @@
 * [How To Use The App](#How-To-Use-The-App)
 * [Contact](Contact)
 ## Introduction
-This application presents a work day planning schedule. It renders a platform to write your hourly schedule from 9AM to 5PM. A user can write his/her hourly schedule and save it so that it will be saved and remain on the text box. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This application presents a work day planning schedule. It renders a platform to write users hourly schedule from 9AM to 5PM. A user can write his/her hourly schedule and save it so that it will be saved and remain on the text box. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
 ## Objective
 
