@@ -26,7 +26,12 @@ Using this app simply requires writing ones hourly schedule and clicking the sav
 
 The text area changes color based whether the time on the schedules is past, present or future. Grey text area indicates that time is behind us. A reddish text area means, the current time is on that scheduler time block. A greenish color indicates that time block lies in the future.
 
-
+## Technologies Used
+- Bootstrap
+- moment.js
+- JavaScript
+- CSS
+- HTML
 ## Contact
 
 Should you have any questions about this repo or the deployed page, contact me on [girma.derib@gmail.com](mailto:girma.derib@gmail.com)
