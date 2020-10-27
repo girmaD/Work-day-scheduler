@@ -32,6 +32,10 @@ The text area changes color based whether the time on the schedules is past, pre
 - JavaScript
 - CSS
 - HTML
+
+## License
+- MIT
+
 ## Contact
 
 Should you have any questions about this repo or the deployed page, contact me on [girma.derib@gmail.com](mailto:girma.derib@gmail.com)
